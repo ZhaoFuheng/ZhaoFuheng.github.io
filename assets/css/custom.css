@@ -1,0 +1,35 @@
+/* Make all text in the main content area a softer gray */
+#main, 
+#main p, 
+#main li, 
+#main td, 
+#main th, 
+#main h1, 
+#main h2, 
+#main h3, 
+#main h4, 
+#main h5, 
+#main h6, 
+#main strong, 
+#main b, 
+#main label {
+  color: #374151 !important; /* soft neutral gray from Tailwind palette */
+}
+
+/* Links: calm blue with subtle hover effect */
+#main a {
+  color: #3b82f6 !important; /* medium blue */
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+#main a:hover {
+  color: #2563eb !important; /* slightly darker blue on hover */
+  border-bottom-color: rgba(59, 130, 246, 0.6);
+}
+
+/* Form labels for consistency */
+#main input[type="checkbox"] + label,
+#main input[type="radio"] + label {
+  color: #374151 !important;
+}
