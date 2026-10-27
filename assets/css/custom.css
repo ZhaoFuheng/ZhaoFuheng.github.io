@@ -33,3 +33,36 @@
 #main input[type="radio"] + label {
   color: #374151 !important;
 }
+
+/* News list on the home page */
+#main ul.news {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2.5em;
+}
+#main ul.news li {
+  display: flex;
+  gap: 1.25em;
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+#main ul.news li:last-child {
+  border-bottom: none;
+}
+#main ul.news .news-date {
+  flex: 0 0 5.5em;
+  color: #6b7280 !important;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1.9;
+  white-space: nowrap;
+}
+#main ul.news .news-text {
+  flex: 1 1 auto;
+}
+
+/* Highlight my name in author lists */
+#main .me {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

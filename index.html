@@ -19,7 +19,7 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/FuhengImage.jpeg" alt="" /></a>
 					<h1><strong>Hi, I'm Fuheng Zhao</strong>.</h1>
-					<h1>Incoming Assistant Professor at the University of Utah.</h1>
+					<h1>Assistant Professor at the University of Utah.</h1>
 			</div>
 			</header>
 
@@ -29,7 +29,7 @@
 						<header class="major">
 							<h2>About<br /></h2>
 						</header>
-						<p>I recently completed my Ph.D. in Computer Science at the University of California, Santa Barbara, where I was co-advised by <a href="https://sites.cs.ucsb.edu/~agrawal/">Professor Divyakant Agrawal</a> and <a href="https://sites.cs.ucsb.edu/~amr/">Professor Amr El Abbadi</a>. 
+						<p>I am an Assistant Professor in the <a href="https://www.cs.utah.edu/">Kahlert School of Computing</a> at the University of Utah, where I co-lead the <a href="https://mod.cs.utah.edu/">UtahDB</a> research group. I received my Ph.D. in Computer Science from the University of California, Santa Barbara, where I was co-advised by <a href="https://sites.cs.ucsb.edu/~agrawal/">Professor Divyakant Agrawal</a> and <a href="https://sites.cs.ucsb.edu/~amr/">Professor Amr El Abbadi</a>. 
 						  <br>
 						  Besides research, I enjoy trying new food, watching movies, and playing tennis and badminton. I'm also a trumpet player in which I played trumpet solo in Danzón No. 2 at the Disney Hall.
 						</p>
@@ -40,13 +40,9 @@
 					
 
 						<p>
-							<strong>Excited to share that I will be joining the University of Utah as a Tenure-Track Assistant Professor.</strong>
+							I am always looking for <strong>highly motivated students</strong> who are interested in data systems.
+							Check out <a href="./research.html">my research interests</a> and feel free to reach out!
 						</p>
-						<p>
-							I am looking for <strong>self-motivated students</strong> who are interested in the data systems. A few specific topics that I'm very interested at: hybrid queries (AI SQL), NL2SQL, streaming algorithms, and vector index.
-							If you are passionate about building the next generation of intelligent data systems, 
-							please check out <a href="./research.html">my research interests and advising information</a> and feel free to reach out!
-						  </p>
 
 						  <p>
 							Interested in collaboration? Drop me an email and let's chat!
@@ -55,75 +51,103 @@
 
 				<!-- Two -->
 				<section id="two">
-					<h2>Selected Publications and Projects</h2>
+					<h2>News</h2>
+					<ul class="news">
+						<li><span class="news-date">Oct 2026</span><span class="news-text">New preprint: <a href="https://arxiv.org/abs/2610.02046" target="_blank">JEVDB</a>, scalable semantic query processing that prunes first and decides fast.</span></li>
+						<li><span class="news-date">Sep 2026</span><span class="news-text">Two papers at VLDB 2026: <a href="https://www.vldb.org/pvldb/vol19/p2978-otaki.pdf" target="_blank">CrocSort</a>, a resource-efficient parallel external merge sort, and the <a href="https://www.vldb.org/pvldb/vol19/p4514-mazumder.pdf" target="_blank">AtomSQL</a> demo on interactive NL2SQL disambiguation.</span></li>
+						<li><span class="news-date">Jun 2026</span><span class="news-text">New preprint: <a href="https://arxiv.org/abs/2606.07923" target="_blank">Larch</a>, learned query optimization for semantic predicates.</span></li>
+						<li><span class="news-date">May 2026</span><span class="news-text"><a href="https://www.bu.edu/peaclab/files/2026/03/nsdi26fall-prvtel.pdf" target="_blank">PrvTel</a>, lightweight models for private and accurate telemetry retention, appeared at NSDI 2026.</span></li>
+						<li><span class="news-date">Aug 2025</span><span class="news-text">New preprint: <a href="https://arxiv.org/abs/2509.00303" target="_blank">Access Paths</a> for efficient ordering with large language models.</span></li>
+					</ul>
 
-					<h2>Integrating LLMs into Data Systems</h2>
+					<h2>Open-Source Projects</h2>
 					<div class="row">
-
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>Sphinteract: Resolving Ambiguities in NL2SQL Through User Interaction</h3>
-							<p><strong>Fuheng Zhao</strong>, Shaleen Deep, Fotis Psallidas, Avrilia Floratou, Divyakant Agrawal, Amr El Abbadi</p>
+							<h3><a href="https://github.com/ZhaoFuheng/SWAN-AISQL" target="_blank">SWAN-AISQL</a></h3>
+							<p>A DuckDB extension and Python package that brings LLM-based semantic operators (<code>ai_filter</code>, <code>ai_classify</code>, <code>ai_score</code>, <code>ai_complete</code>, <code>ai_agg</code>, <code>ai_embed</code>, <code>ai_image</code>) into SQL, with an optimizer that deduplicates LLM calls, evaluates AI joins over distinct pair domains, and applies learned predicate ordering and early stopping.</p>
+							<p><a href="https://github.com/ZhaoFuheng/SWAN-AISQL" target="_blank">GitHub</a> &middot; <code>pip install swan-aisql</code></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3><a href="https://github.com/ZhaoFuheng/SWANBench" target="_blank">SWANBench</a></h3>
+							<p>A benchmark of 120 "beyond-database" questions over BIRD databases that require combining LLM knowledge with SQL. SWAN 2.0 also measures how well systems plan their LLM calls, tracking quality, number of calls, tokens, cost, and latency, with a cache proxy for free, reproducible reruns.</p>
+							<p><a href="https://github.com/ZhaoFuheng/SWANBench" target="_blank">GitHub</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3><a href="https://www.jevdb.org/" target="_blank">JEVDB</a></h3>
+							<p>A scalable semantic database system for efficient and cost-effective semantic query processing over unstructured data. JEVDB answers most semantic questions with a low latency decision models and sends only the uncertain cases to large generative LLMs.</p>
+							<p><a href="https://www.jevdb.org/" target="_blank">Website</a> &middot; <a href="https://github.com/PDAIS/JEVDB" target="_blank">GitHub</a> &middot; <a href="https://arxiv.org/abs/2610.02046" target="_blank">Paper</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>Redwood Storage Engine, FoundationDB</h3>
+							<p>Redwood is led by Steve Atherton. I contributed on monitoring, caching, and scheduling disk I/O during my two summer internships at Snowflake.</p>
+							<p>Most of my contributions can be found <a href="https://github.com/sfc-gh-fzhao" target="_blank">here</a>.</p>
+						</article>
+					</div>
+
+					<h2>Selected Publications</h2>
+					<h3>Integrating LLMs into Data Systems</h3>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<h3><a href="https://arxiv.org/abs/2606.07923" target="_blank">Larch: Learned Query Optimization for Semantic Predicates</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Pawel Liskowski, Zihan Li, Benjamin Han, Puxuan Yu, Varich Boonsanong, Dimitris Tsirogiannis, Anupam Datta</p>
+							<p><strong>arXiv preprint, 2026</strong></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3><a href="https://www.vldb.org/pvldb/vol18/p1145-zhao.pdf" target="_blank">Sphinteract: Resolving Ambiguities in NL2SQL Through User Interaction</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Shaleen Deep, Fotis Psallidas, Avrilia Floratou, Divyakant Agrawal, Amr El Abbadi</p>
 							<p><strong>VLDB 2025</strong></p>
 						</article>
-
-
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>Hybrid Querying Over Relational Databases and Large Language Models</h3>
-							<p><strong>Fuheng Zhao</strong>, Divyakant Agrawal, Amr El Abbadi</p>
+							<h3><a href="https://arxiv.org/abs/2408.00884" target="_blank">Hybrid Querying Over Relational Databases and Large Language Models</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Divyakant Agrawal, Amr El Abbadi</p>
 							<p><strong>CIDR 2025</strong></p>
 						</article>
-				
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>NL2SQL is a Solved Problem... Not!</h3>
-							<p>Work done while interning at Microsoft Gray System Lab</p>
+							<h3><a href="https://www.cidrdb.org/cidr2024/papers/p74-floratou.pdf" target="_blank">NL2SQL is a Solved Problem... Not!</a></h3>
+							<p>Avrilia Floratou, Fotis Psallidas, <strong class="me">Fuheng Zhao</strong>, Shaleen Deep, Gunther Hagleither, Wangda Tan, Joyce Cahoon, et al.</p>
+							<p>Work done while interning at Microsoft Gray Systems Lab</p>
 							<p><strong>CIDR 2024</strong></p>
 						</article>
 					</div>
-				
-					<h2>Streaming Algorithms</h2>
-					<div class="row">
 
+					<h3>Streaming Algorithms</h3>
+					<div class="row">
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>Panakos: Chasing the Tails for Multidimensional Data Streams</h3>
-							<p><strong>Fuheng Zhao</strong>, Punnal Ismail Khan, Divyakant Agrawal, Amr El Abbadi, Arpit Gupta, Zaoxing Liu</p>
+							<h3><a href="https://www.vldb.org/pvldb/vol16/p1291-zhao.pdf" target="_blank">Panakos: Chasing the Tails for Multidimensional Data Streams</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Punnal Ismail Khan, Divyakant Agrawal, Amr El Abbadi, Arpit Gupta, Zaoxing Liu</p>
 							<p><strong>VLDB 2023</strong></p>
 						</article>
-				
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>Differentially Private Linear Sketches: Efficient Implementations and Applications</h3>
-							<p><strong>Fuheng Zhao*</strong>, Dan Qiao*, Rachel Redberg, Divyakant Agrawal, Amr El Abbadi, Yu-Xiang Wang</p>
+							<h3><a href="https://arxiv.org/abs/2205.09873" target="_blank">Differentially Private Linear Sketches: Efficient Implementations and Applications</a></h3>
+							<p><strong class="me">Fuheng Zhao*</strong>, Dan Qiao*, Rachel Redberg, Divyakant Agrawal, Amr El Abbadi, Yu-Xiang Wang</p>
 							<p><strong>NeurIPS 2022</strong></p>
 						</article>
-				
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>SpaceSaving±: An Optimal Algorithm for Frequency Estimation and Frequent Items in the Bounded Deletion Model</h3>
-							<p><strong>Fuheng Zhao</strong>, Divyakant Agrawal, Amr El Abbadi, Ahmed Metwally</p>
+							<h3><a href="https://www.vldb.org/pvldb/vol15/p1215-zhao.pdf" target="_blank">SpaceSaving±: An Optimal Algorithm for Frequency Estimation and Frequent Items in the Bounded Deletion Model</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Divyakant Agrawal, Amr El Abbadi, Ahmed Metwally</p>
 							<p><strong>VLDB 2022</strong></p>
 						</article>
-				
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>KLL±: Approximate Quantile Sketches over Dynamic Datasets</h3>
-							<p><strong>Fuheng Zhao</strong>, Sujaya Maiyya, Ryan Wiener, Divyakant Agrawal, Amr El Abbadi</p>
+							<h3><a href="https://www.vldb.org/pvldb/vol14/p1215-zhao.pdf" target="_blank">KLL±: Approximate Quantile Sketches over Dynamic Datasets</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Sujaya Maiyya, Ryan Wiener, Divyakant Agrawal, Amr El Abbadi</p>
 							<p><strong>VLDB 2021</strong></p>
+						</article>
 					</div>
 
-					<h2>Storage Engines</h2>
+					<h3>Storage Engines</h3>
 					<div class="row">
 						<article class="col-6 col-12-xsmall work-item">
-								<h3>Autumn: A Scalable Read Optimized LSM-tree based Key-Value Stores with Fast Point and Range Read Speed</h3>
-								<p>Proposed a new compaction policy to gradually expand LSM horizontally and enhance the read performance.</p>
-								<p>ICDE 2025</p>
+							<h3><a href="https://www.vldb.org/pvldb/vol19/p2978-otaki.pdf" target="_blank">CrocSort: Resource-Efficient, Skew-Resilient Parallel External Merge Sort</a></h3>
+							<p>Riki Otaki, Charles Benello, <strong class="me">Fuheng Zhao</strong>, Aaron J. Elmore, Goetz Graefe</p>
+							<p><strong>VLDB 2026</strong></p>
 						</article>
-				
 						<article class="col-6 col-12-xsmall work-item">
-							<h3>Redwood Storage Engine, FoundationDB</h3>
-							<p>Redwood project is lead by Steve Atherton. </p>
-							<p>I contributed on monitoring, caching, and scheduling disk I/O during my two summer internships at Snowflake. Most of my contributions can be found <a href="https://github.com/sfc-gh-fzhao" target="_blank">here</a>.</p>
-
+							<h3><a href="https://arxiv.org/abs/2305.05074" target="_blank">Autumn: A Scalable Read Optimized LSM-tree based Key-Value Stores with Fast Point and Range Read Speed</a></h3>
+							<p><strong class="me">Fuheng Zhao</strong>, Zach Miller, Leron Reznikov, Divyakant Agrawal, Amr El Abbadi</p>
+							<p>Proposed a new compaction policy to gradually expand LSM horizontally and enhance the read performance.</p>
+							<p><strong>ICDE 2025</strong></p>
 						</article>
-				
 					</div>
-
 				</section>
 
 			

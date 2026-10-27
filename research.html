@@ -38,7 +38,7 @@
   <div class="wrap">
     <header>
       <h1>Research & Advising</h1>
-      <p>University of Utah (Incoming Assistant Professor). I am recruiting 2-3 <strong>self-motivated PhD students</strong> excited about building intelligent data systems at the intersection of databases and large language models.</p>
+      <p>Assistant Professor, Kahlert School of Computing, University of Utah. I am always looking for <strong>highly motivated students</strong> excited about building intelligent data systems at the intersection of databases and large language models.</p>
     </header>
 
     <nav class="toc card">
@@ -47,7 +47,6 @@
         <li><a href="#advising">Advising & expectations</a></li>
         <li><a href="#topics">Research Topics</a></li>
         <li><a href="#areas">Focus areas</a></li>
-        <li><a href="#problems">Open problems</a></li>
         <li><a href="#apply">How to apply / reach out</a></li>
       </ul>
     </nav>
@@ -95,14 +94,13 @@
         <div class="card">
           <h3>NL2SQL & Hybrid Queries(AI SQL)</h3>
           <p>
-            Robust translation from natural language to SQL/AI SQL with schema grounding, constraint checking, and execution-time
-            validation.
-            Query plans that mix relational operators with LLM calls, including <em>LLM ORDER BY</em>, semantic filters,
-            and reasoning joins. We develop cost models for token-accuracy trade-offs, caching, and verification.
+            Translating natural language into SQL and AI SQL that users can trust, and optimizing query plans that
+            mix relational operators with LLM calls such as semantic filters, <em>LLM ORDER BY</em>, and reasoning joins.
+            We build cost models that balance accuracy, latency, and token cost.
           </p>
         </div>
         <div class="card">
-          <h3>Streaming Algorithms & Sketches</h3>
+          <h3>Sketching</h3>
           <p>
             High-performance sketches (e.g., heavy hitters, quantiles, cardinality) with accuracy guarantees,
             supporting real-time analytics and approximate processing under tight time/memory budgets.
@@ -112,25 +110,20 @@
             <h3>Indexing & Storage</h3>
             <p>
               Study indexing structures such as <strong>B-trees</strong> and <strong>LSM-trees</strong>, 
-              as well as emerging vector indexes (e.g., strong>DiskANN</strong>) to support approximate nearest neighbor search. 
+              as well as emerging vector indexes (e.g., <strong>DiskANN</strong>) to support approximate nearest neighbor search. 
               These indexing structures accelerate access to structured, unstructured, and embedding-based data.            </p>
+        </div>
+        <div class="card">
+          <h3>DB for Agents</h3>
+          <p>
+            Rethink how data systems should evolve when the primary user is an AI agent rather than a human.
+            We study the interfaces, abstractions, and guardrails that let agents query, explore, and modify data
+            reliably, and build benchmarks that evaluate how well agents recover the hidden structure of enterprise data.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="problems">
-      <h2>Example problems</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Query optimization for LLM operators:</strong> develop cost models and query rewrites to balance accuracy, latency, and token efficiency.</li>
-          <li><strong>Vector-relational fusion:</strong> explore ANN and GPU acceleration for data processing, investigating which stages of the data pipeline can be effectively offloaded to GPUs for improved throughput/latency.</li>
-          <li><strong>DB for Agents:</strong> investigate how databases should evolve when the primary user is an AI agent — whether to expose more internal details or design abstractions that minimize hallucination and ensure reliability.</li>
-          <li><strong>Streaming Algorithms:</strong> design new sketches and explore their integration into ML systems, such as during fine-tuning or inference.</li>
-
-        </ul>
-        <p class="callout"><strong>Interested?</strong> If one or more of these problems excites you, you’ll likely enjoy working with us.</p>
-      </div>
-    </section>
 
 
     <section id="apply">
@@ -138,7 +131,6 @@
         <div class="card">
         <ol>
         <li><strong>Apply to the University of Utah.</strong> Please submit your graduate application through the official portal and <em>mention my name</em> in your application if you are interested in working with me. Use the official application site: <a href="https://www.cs.utah.edu/graduate/prospective-students/admissions/graduate-application/" target="_blank" rel="noopener">University of Utah Graduate Application</a>.</li>
-        <li><strong>Email me</strong> with the subject line <code>[Prospective Student]</code> and include: (i) a short paragraph on which area(s) you’re most excited about (I’m open to suggestions), (ii) your CV (PDF) and links to any code or papers, and (iii) optionally, a 1–2 paragraph mini‑proposal describing a concrete idea you’d like to explore. <em>Due to volume, I may not be able to reply to every message, but I do read them and will review applications during the admissions cycle.</em></li>
         <li><strong>Current or prospective M.S. students at Utah.</strong> If you’d like to join the lab for research or an independent study, email me with your CV, unofficial transcript, and a brief note on the project area you’re interested in.</li>
         </ol>
         </div>
