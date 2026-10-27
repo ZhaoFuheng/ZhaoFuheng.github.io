@@ -66,3 +66,19 @@
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* Tighter vertical rhythm so About and News fit on the first screen */
+#main {
+  padding-top: 4em;
+}
+#main > section {
+  margin-top: 3em;
+  padding-top: 3em;
+}
+#main ul.news {
+  margin-bottom: 0;
+}
+#main h2.news-heading {
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+}
